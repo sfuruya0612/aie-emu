@@ -21,7 +21,7 @@ func main() {
 
 	app.EnableBashCompletion = true
 	app.Name = "aie-emu"
-	app.Usage = ""
+	app.Usage = "Get list of AWS IAM User and output to some formats"
 
 	if date != "" || hash != "" || goversion != "" {
 		app.Version = fmt.Sprintf("%s %s (Build by: %s)", date, hash, goversion)
@@ -34,12 +34,12 @@ func main() {
 			Name:   "profile, p",
 			EnvVar: "AWS_PROFILE",
 			Value:  "default",
-			Usage:  "AWS credential (~/.aws/config) or read AWS_PROFILE environment variable",
+			Usage:  "Aws credential or AWS_PROFILE environment variable",
 		},
 		cli.StringFlag{
 			Name:  "output, o",
 			Value: "stdout",
-			Usage: "",
+			Usage: "Output format",
 		},
 	}
 
