@@ -49,28 +49,33 @@ GLOBAL OPTIONS:
    --version, -v              print the version
 ```
 
-#### Example
+### Example
 
 Set `AWS_PROFILE`  
+
 - Export environment variable.(`export AWS_PROFILE=<Your Credential>`)
 - Commands Option.(`aie-emu -p <Your Credential>`)
 
-``` sh
+```bash
 # stdout
 $ aie-emu
 ```
 
-```
+```bash
 # csv
 $ aie-emu -o csv
 ```
 
-```
+```bash
 # Markdown
 $ aie-emu -o md
 ```
 
-```
+```bash
 # Markdown Extra
 $ aie-emu -o ex
 ```
+
+## License
+
+[MIT License](./LICENSE)
