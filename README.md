@@ -1,5 +1,7 @@
 # aie-emu
 
+[![Build Status](https://travis-ci.org/sfuruya0612/aie-emu.svg?branch=master)](https://travis-ci.org/sfuruya0612/aie-emu)
+
 ## Description
 
 aie-emu is CLI tools for get a list of AWS IAM Users.  
@@ -12,13 +14,13 @@ Now supported csv, Markdown, and Markdown Extra.
 
 - Go get
 
-``` sh
+```bash
 go get github.com/sfuruya0612/aie-emu
 ```
 
 - Build from source
 
-``` sh
+```bash
 git clone https://github.com/sfuruya0612/aie-emu.git
 cd aie-emu
 make install
@@ -28,7 +30,7 @@ make install
 
 ### Help
 
-``` sh
+```bash
 $ aie-emu -h
 NAME:
    aie-emu
